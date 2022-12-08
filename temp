@@ -1,0 +1,61 @@
+#include <bits/stdc++.h>
+  #include<string>
+  #include <cstdio>
+  #include <cstring>
+  #include <cmath>
+  #include <complex>
+  #define ll long long
+  #define llint long long int
+  #define vi vector<int>
+  #define vs vector<string>
+  #define vll vector<ll>
+  #define st stack<ll>
+  #define vvi vector < vi >
+  #define prr pair<int,int>
+  #define mpp map<int,int>
+  #define msi map<string,int>
+  #define pll pair<ll, ll>
+  #define vpll vector<pair<ll,ll>>
+  #define PI 3.141592653589793238462
+  #define mod 1000000007
+  #define inf 1000000000000000001
+  #define eb emplace_back
+  #define fi first
+  ////#define se second
+  #define pb push_back
+  #define pbk pop_back
+  #define pf  push_front
+  #define pfnt pop_front
+  #define forr(i,a,b) for(ll i=a;i<b;i++)
+  #define forr(i,a,b) for(ll i=a;i<=b;i++)
+  #define repa(i,m) for(auto i:m)
+  #define repd(i,a,b) for(ll i=a; i>=b; i--)
+  #define yes cout<<"YES"<<endl
+  #define no cout<<"NO"<<endl
+  
+  using namespace std;
+  
+  int main()
+  {
+   
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+    std::ios::sync_with_stdio(false);
+    // // cin.ignore(); must be there when using getline(cin, s)
+    //ll count=0;
+    ll T;
+    cin>>T;
+    //ll count=0;
+ 
+    while(T--)
+    {
+ 
+ 
+ 
+ 
+ 
+ }
+ return 0;
+ }

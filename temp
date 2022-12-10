@@ -35,6 +35,41 @@
   
   using namespace std;
   
+map<ll,ll> primeFactors(int n)
+{
+    map<ll,ll> mp;
+    int cnt=0;
+    // Print the number of 2s that divide n
+    while (n % 2 == 0)
+    {
+      cnt++;
+        n = n/2;
+    }
+    if(cnt>0) mp[2]=cnt;
+ 
+    // n must be odd at this point. So we can skip
+    // one element (Note i = i +2)
+    for (int i = 3; i <= sqrt(n); i = i + 2)
+    {
+         cnt=0;
+        // While i divides n, print i and divide n
+        while (n % i == 0)
+        {
+          cnt++;
+            n = n/i;
+        }
+        
+        if(cnt>0) mp[i]=cnt;
+    }
+ 
+    // This condition is to handle the case when n
+    // is a prime number greater than 2
+    if (n > 2)
+      mp[n]=1;
+      
+      return mp;
+}
+ 
   int main()
   {
    

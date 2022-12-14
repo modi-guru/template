@@ -35,6 +35,22 @@
   
   using namespace std;
   
+  
+  int dis_elmts(int arr[], int n){
+   // Sorting the array
+   sort(arr, arr + n);
+   // Traverse the sorted array
+   int count = 0;
+   for (int i = 0; i < n; i++){
+      // Moving the index when duplicate is found
+      while (i < n - 1 && arr[i] == arr[i + 1]){
+         i++;
+      }
+      count++;
+   }
+   return count;
+}
+  
 map<ll,ll> primeFactors(int n)
 {
     map<ll,ll> mp;
